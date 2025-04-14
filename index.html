@@ -2,36 +2,34 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCRVYGFN81"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-QCRVYGFN81');
-    </script>
-    
-    <!-- Мінімізовані стилі -->
-    <link rel="stylesheet" href="style.min.css">
-    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-56XTC3X2EV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-56XTC3X2EV');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Timer</title>
+    <title>Web Timer</title>
+    <!-- Підключення зовнішнього файлу стилів -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Заголовок сторінки -->
+    <h1>Simple Web Timer</h1>
+    <!-- Контейнер для таймера -->
     <div id="countdown">
         <p id="timer">
-            <span id="days"></span>
-            <span class="timer-unit">Days</span>
-            <span id="hours"></span>
-            <span class="timer-unit">Hours</span>
-            <span id="minutes"></span>
-            <span class="timer-unit">Minutes</span>
-            <span id="seconds"></span>
-            <span class="timer-unit">Seconds</span>
+            <!-- Елементи, які відображають час -->
+            <span id="days"></span> <span class="timer-unit">Days</span>
+            <span id="hours"></span> <span class="timer-unit">Hours</span>
+            <span id="minutes"></span> <span class="timer-unit">Minutes</span>
+            <span id="seconds"></span> <span class="timer-unit">Seconds</span>
         </p>
     </div>
-
-    <!-- Відкладене завантаження JavaScript -->
-    <script src="script.min.js" defer></script>
+    <!-- Підключення зовнішнього файлу скриптів -->
+    <script src="script.js"></script>
 </body>
 </html>
