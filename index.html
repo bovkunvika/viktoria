@@ -2,19 +2,29 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-56XTC3X2EV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QCRVYGFN81');
-</script>
-    <!-- Мінімізовані стилі -->
-    <link rel="stylesheet" href="style.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-56XTC3X2EV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QCRVYGFN81');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Countdown Timer - простий веб-додаток для відліку часу.">
+
+    <!-- Інлайн-критичні стилі -->
+    <style>
+      #countdown { font-size: 20px; }
+      .timer-unit { color: #333; }
+    </style>
+
+    <!-- Попереднє завантаження стилів -->
+    <link rel="preload" href="style.min.css" as="style">
+    <link rel="stylesheet" href="style.min.css">
+
     <title>Countdown Timer</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="countdown">
@@ -29,6 +39,12 @@
             <span class="timer-unit">Seconds</span>
         </p>
     </div>
-    <script src="script.js" defer></script>
+
+    <!-- Lazy-loading зображень -->
+    <img src="example.webp" loading="lazy" alt="Countdown Timer Example" width="300" height="200">
+
+    <!-- Попереднє завантаження скриптів -->
+    <link rel="preload" href="script.min.js" as="script">
+    <script src="script.min.js" async></script>
 </body>
 </html>
