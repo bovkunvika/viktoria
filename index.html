@@ -2,42 +2,17 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-56XTC3X2EV"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-QCRVYGFN81');
-    </script>
-
-    <!-- Мета-теги -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-56XTC3X2EV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QCRVYGFN81');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Countdown Timer - простий веб-додаток для відліку часу.">
-
-    <!-- Інлайн-критичні стилі -->
-    <style>
-        #countdown {
-            font-family: Arial, sans-serif;
-            font-size: 20px;
-            text-align: center;
-            padding: 20px;
-        }
-        .timer-unit {
-            color: #333;
-            font-weight: bold;
-        }
-    </style>
-
-    <!-- Попереднє завантаження стилів -->
-    <link rel="preload" href="style.min.css" as="style">
-    <link rel="stylesheet" href="style.min.css">
-
-    <!-- Попереднє підключення до доменів -->
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="countdown">
@@ -52,13 +27,6 @@
             <span class="timer-unit">Seconds</span>
         </p>
     </div>
-
-    <!-- Lazy-loading зображень -->
-    <img src="example.webp" loading="lazy" alt="Countdown Timer Example" width="300" height="200">
-
-    <!-- Попереднє завантаження скриптів -->
-    <link rel="preload" href="script.min.js" as="script">
-    <!-- Мінімізований скрипт -->
-    <script src="script.min.js" async></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
