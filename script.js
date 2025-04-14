@@ -1,5 +1,5 @@
 // Встановлюємо дату, до якої будемо відлічувати
-const targetDate = new Date('2024-11-14T14:54:00').getTime();
+const targetDate = new Date('2025-11-14T14:54:00').getTime();
 
 // Функція оновлення зворотного відліку
 function updateCountdown() {
